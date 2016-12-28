@@ -1,0 +1,22 @@
+//The following program will show have variables and value assigning are done in Simple.
+int main(){
+	int a, b;
+	str s;
+	println(a);	
+	println(b);
+	println(s);
+	// 0, 0, and an empty string will be printed to separate lines, as the variables default values.
+	a = 15;
+	b = a + 5;
+	s = "myString";
+	println(a);	
+	println(b);
+	println(s);	
+	// 15, 20, and "myString" will be printed to separate lines.
+	a = b;
+	b = 100;
+	println(a);	
+	println(b);
+	// 20 and 100 will be printed to separate lines.
+	return 0;
+}

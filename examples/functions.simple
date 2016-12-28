@@ -1,0 +1,19 @@
+//The following example will show how variable shadowing, scopes, and costum functions work in Simple.
+
+int f(int i){
+	i = i**2;
+	println(i); // will print the square of i
+
+	return 1;
+}
+
+int main(){
+	
+	int i;
+	i = 5;
+	println(i); // will print 5
+	f(i); // 25 will be printed in this function
+	println(i); // will print 5
+
+	return 0;
+}

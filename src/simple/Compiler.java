@@ -126,7 +126,7 @@ public class Compiler extends SimpleBaseVisitor<Object>{
 		String type = ctx.type().getText();
 		String name = ctx.NAME().getText();
 		
-		if(name.equals("len") || name.equals("print") || name.equals("println") || name.equals("read") || name.equals("kmp") || name.equals("bm") || name.equals("concat") || name.equals("main"))
+		if(name.equals("len") || name.equals("print") || name.equals("println") || name.equals("read") || name.equals("kmp") || name.equals("bm") || name.equals("concat"))
 			abort("System function '" + name + "' cannot be overrided.");
 		
 		if(getScope().get(name) != null)

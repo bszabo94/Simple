@@ -100,7 +100,7 @@ compareop: value COP value
 
 
 PLUSMINUS: '+' | '-' ;
-TIMESDIVMOD: '*' | '/' | '%' ;
+TIMESDIVMOD: '*' | '/' | 'mod' ;
 
 POW: '**' ;
 

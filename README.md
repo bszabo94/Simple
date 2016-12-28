@@ -31,7 +31,7 @@ Nearly everything, that returns a value, can be assigned to a variable (if it ha
 * Literals: string values (within two simple or double *quotemarks*), or integer values to variables with the same type
 * Functioncalls: you can call System or costum functions, and if they have the proper type of return value, it can be assigned
 * You can compare two values with the common logic operators ( *==* *!=* *<* *>* *<=* *>=*), it will return an integer value: 0 if the statement is false, 1 if true. (*For strings, < > <= >= will check the alphabetical order*)
-* Arithmetical expressions (+, -, *, /, % (modulo), ** (power) )
+* Arithmetical expressions (+, -, *, /, mod (modulo), ** (power) )
 
 As for if block, and while and for cyclces, they works similar to C, with the following:
 * You can check for any value: for integer, 0 stands for false, any other number will stand for true, while for strings "", the empty string stands for false, and any other string stands for true
@@ -63,5 +63,8 @@ This java program can read from input files, and tries to compile and run the co
 
 ### Errors and warnings
 Simple will abort the program whenever it finds a runtime exception, and will write you precisely what was the problem. It will also list you all warnings, after the program that occured during runtime (such as having dead code after a *return* statement).
+
+### Examples
+You can find some example codes in the *examples* folder.
 
 

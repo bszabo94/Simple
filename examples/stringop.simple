@@ -1,0 +1,30 @@
+//the following example will show how to handle string operations in Simple
+
+int main(){
+	str s;
+	s = "my string";
+	
+	println(s[0]); //will print "m"
+	println(s[len(s)-1]); //will print "g"
+	println(s[2,]); //will print " string"
+	println(s[,2]); //will print "my"
+	println(s[2,3]); //will print " "
+
+	println(s#"my"); //will print 0
+	println(s##"cow"); //will print -1
+	
+	str s1;
+	str s2;
+	s1 = s;
+	s2 = s;
+	println(s1%"my"); //will print "my"
+	println(s2%%" string"); //will print " string"
+	println(s); //will print "my string"
+	println(s1); //will print " string"
+	println(s2); //will print "my"
+
+	println(concat(s1, s2)); //will print " stringmy"
+	println(len(s)); //will print 9
+
+	return 0;
+}

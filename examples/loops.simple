@@ -1,0 +1,33 @@
+//The following example will show how variable shadowing, scopes, and costum functions work in Simple.
+
+str printnumbers(str loop){
+	if(loop == "while"){
+		int i;
+		while(i < 10){
+			println(i);
+			i = i + 1;
+		}
+		return "done";
+	}
+	if(loop == "for"){
+		for(int i, 0, 10){
+			println(i);
+		}
+		return "done";
+	} else {
+		return "wrong loop added";
+	}
+
+}
+
+int main(){
+	
+	//both will print numbers from 0 to 9, and then print "done"
+	println(printnumbers("for"));
+	println(printnumbers("while"));
+
+	//this will print "wrong loop added" message
+	println(printnumbers("cow"));
+
+	return 0;
+}
